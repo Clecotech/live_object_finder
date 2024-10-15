@@ -34,9 +34,6 @@ def main():
                 class_name = result.names[class_id]
                 confidence = float(box.conf[0])*100
                 st.markdown(f"- **{class_name}**: {confidence:.2f}%")
-        else:
-            st.write("Object detection completed!")
-
 
 if __name__ == "__main__":
     main()
